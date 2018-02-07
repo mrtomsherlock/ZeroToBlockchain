@@ -2,8 +2,8 @@
  * Zero To Blockchain multi-party finance network
  */
 namespace org.acme.Z2BTestNetwork
-import composer.base.*
-import composer.events.*
+import composer.base.* //  this is importing base.cto file
+import composer.events.*//  this is importing events.cto file
 
 participant Buyer identified by buyerID extends Member{
     o String buyerID
@@ -20,7 +20,7 @@ participant Provider identified by providerID extends Member {
 participant FinanceCo identified by financeCoID extends Member {
     o String financeCoID
 }
-
+// define all the participants in the blockchain (from the model we have)
 asset Order identified by orderNumber {
     o String orderNumber
     o String[] items
@@ -47,8 +47,8 @@ asset Order identified by orderNumber {
     --> Provider provider
     --> Shipper shipper
     --> Buyer buyer
-    --> Seller seller 
-    --> FinanceCo financeCo 
+    --> Seller seller
+    --> FinanceCo financeCo
 
 }
   transaction CreateOrder {

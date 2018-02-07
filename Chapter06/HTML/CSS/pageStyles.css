@@ -16,9 +16,9 @@ body {height: 100%}
 		color: blue;
 		font-size: 1em;
 		text-align: center;
-	}	
+	}
 }
-@media screen and ( min-height: 800px ) {	
+@media screen and ( min-height: 800px ) {
 	.scrollingPane{
 		height: calc(70vh - 5em);
 		margin-left: 0px;
@@ -30,9 +30,9 @@ body {height: 100%}
 		color: blue;
 		font-size: 1.5em;
 		text-align: center;
-	}	
+	}
 }
-@media screen and ( min-width: 800px ) {	
+@media screen and ( min-width: 800px ) {
 	.wide{
 		margin-left: 2.5%;
 		margin-right: 2.5%;
@@ -40,13 +40,13 @@ body {height: 100%}
 		overflow: auto;
 	}
 }
-@media screen and ( max-width: 799px ) {	
+@media screen and ( max-width: 799px ) {
 	.wide{
 		margin-left: .125em;
 		margin-right: .125em;
 		overflow: auto;
 	}
-}	
+}
 .strike {
     position: relative;
 }
@@ -98,7 +98,7 @@ p.message{
 .blockchain {
 	background-color: black;
 	position: fixed;
-	height: 8%;
+	height: 15%;
 	margin-left: 1%;
 	width: 95%;
 	top: 92%;
@@ -134,7 +134,7 @@ table {border: 1px solid #0000ff;}
  td { border: 1px solid #0000ff; padding-left: .25em; padding-right: .25em}
  th.right {text-align: right; font-style: bold; font-size: 1em; padding: .25em;}
  th.left {text-align: left; font-style: bold; font-size: 1em; padding: .25em;}
- 
+
 .imageLabel {
 	color: black; text-align: center; font-style: bold; font-size: 1.5em; padding: .5em;}
 

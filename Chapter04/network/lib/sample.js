@@ -12,6 +12,8 @@
  * limitations under the License.
  */
 
+ // the name of this file should match that of sample.cto
+
 var orderStatus = {
     Created: {code: 1, text: 'Order Created'},
     Bought: {code: 2, text: 'Order Purchased'},
@@ -105,7 +107,7 @@ function OrderFromSupplier(purchase) {
  * @transaction
  */
 function RequestShipping(purchase) {
-    if (purchase.order.status = JSON.stringify(orderStatus.Ordered))
+    if (purchase.order.status = JSON.stringify(orderStatus.Ordered)) //validation
     {
         purchase.order.shipper = purchase.shipper;
         purchase.order.requestShipment = new Date().toISOString();

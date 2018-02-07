@@ -19,4 +19,4 @@ namespace composer.base
 
 abstract participant Member {
   o String companyName
-}
+}  // every member has a companyName within it
