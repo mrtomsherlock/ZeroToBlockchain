@@ -5,7 +5,7 @@ query selectOrders {
   description: "Select all Orders"
   statement:
       SELECT org.acme.Z2BTestNetwork.Order
-}
+} //this statement has no security on it. Instead, security is intrinsic within the blockchain meaning we dno't need to specify security/access rights here
 
 query selectOrdersByBuyer {
   description: "Select all orders for a specific buyer"
@@ -27,4 +27,3 @@ query selectOrdersBySellerAndStatus {
       SELECT org.acme.Z2BTestNetwork.Order
           WHERE (seller.sellerID == _$id AND status == _$status)
 }
-

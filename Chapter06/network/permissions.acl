@@ -42,7 +42,7 @@ rule BuyerACL {
     resource(v): "org.acme.Z2BTestNetwork.**"
     condition: (v.buyer.buyerID == m.getIdentifier())
     action: ALLOW
-}
+} //specific to our blockchain instance
 /**
 *
 */
@@ -52,7 +52,7 @@ rule netAccessBuyer {
   operation: READ, CREATE, UPDATE, DELETE
   resource: "org.hyperledger.composer.system.**"
   action: ALLOW
-}
+} //wider network level
 
 /**
 *
